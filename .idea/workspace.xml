@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[modify] 0214 리액트 Hook 정리 2차">
+      <change afterPath="$PROJECT_DIR$/ciy/08/08 - 9.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciy/08/08 - 0.정리.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/08/08 - 0.정리.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciy/08/08 - 1 - 1.useState.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/08/08 - 1 - 1.useState.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciy/08/08 - 1 - 2.useState 추가.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/08/08 - 1 - 2.useState 추가.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciy/08/08 - 3.useReducer.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/08/08 - 3.useReducer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciy/08/08 - 5.useCallback.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/08/08 - 5.useCallback.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciy/08/08 - 6.useRef.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/08/08 - 6.useRef.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciy/08/08 - 7.커스텀 Hooks 만들기.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/08/08 - 7.커스텀 Hooks 만들기.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
       <workItem from="1707380605050" duration="2048000" />
       <workItem from="1707382727584" duration="7000" />
       <workItem from="1707788703724" duration="30000" />
-      <workItem from="1707895416234" duration="2349000" />
+      <workItem from="1707895416234" duration="3733000" />
     </task>
     <task id="LOCAL-00001" summary="[modify] 컴포넌트 state">
       <created>1705293142456</created>
@@ -169,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707382607150</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[modify] 0214 리액트 Hook 정리 2차">
+      <created>1707897774453</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1707897774453</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
