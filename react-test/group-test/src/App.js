@@ -66,13 +66,17 @@ export default App;
 
 
 //handleInvertClick - useCallback
-/*inverted가 일때 , dark일때  styled-component에서 텍스트 색상 노란색
+/*
+  inverted가 일때 , dark일때  styled-component에서 텍스트 색상 노란색
   inverted가 아닐때, dark일때 styled-component에서 텍스트 색상은  기본 검정
- */
+*/
 
 //handleChangeThemeClick - useCallback
-/*inverted일때, light일때 styled-component에서 텍스트 색상 파란색
+/*
+  inverted일때, light일때 styled-component에서 텍스트 색상 파란색
   inverted가 아닐때, dark일때 styled-component에서 텍스트 색상은 기본 검정
 */
 
-/*[theme]이 바뀌는 시점에, calculateThemeStyles 실행이 됨 - 배경색상을 바꿈*/
+/*
+  [theme]이 바뀌는 시점에, calculateThemeStyles 실행이 됨 - 배경색상을 바꿈
+*/
