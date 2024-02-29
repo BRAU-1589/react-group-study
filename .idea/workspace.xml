@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0216 스타일 컴포넌트 초안정리">
+    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0223">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciy/09/09 - 3.Styled Component.md" beforeDir="false" afterPath="$PROJECT_DIR$/ciy/09/09 - 3.Styled Component.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +15,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eyewxyz&quot;
+  }
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d43a6d5e-8349-4d3a-88d2-5b66b6f40850" />
+        <option name="url" value="https://github.com/BRAU-1589/react-group-study.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,6 +49,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/df_m_27/WebstormProjects/react-group-study/ciy/09&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -87,7 +101,16 @@
       <workItem from="1708067057777" duration="1000" />
       <workItem from="1708069118259" duration="1632000" />
       <workItem from="1708505437875" duration="40000" />
-      <workItem from="1708506668600" duration="824000" />
+      <workItem from="1708506668600" duration="890000" />
+      <workItem from="1708568986638" duration="1072000" />
+      <workItem from="1708570090797" duration="5361000" />
+      <workItem from="1708590247915" duration="2595000" />
+      <workItem from="1708651847468" duration="82000" />
+      <workItem from="1708652760205" duration="2137000" />
+      <workItem from="1708655362243" duration="532000" />
+      <workItem from="1708660390701" duration="574000" />
+      <workItem from="1708682046481" duration="51000" />
+      <workItem from="1708683076353" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="[modify] 컴포넌트 state">
       <created>1705293142456</created>
@@ -194,7 +217,39 @@
       <option name="project" value="LOCAL" />
       <updated>1708064705036</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[add] 0221 스타일 컴포넌트 공부">
+      <option name="closed" value="true" />
+      <created>1708507551486</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708507551486</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[add] 0222 emotion 0차 정리">
+      <option name="closed" value="true" />
+      <created>1708575585910</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708575585910</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[add] 0222 emotion 0차 정리">
+      <option name="closed" value="true" />
+      <created>1708575697113</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708575697113</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[add] 0223">
+      <option name="closed" value="true" />
+      <created>1708682087062</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708682087062</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +279,9 @@
     <MESSAGE value="[modify] 0214 리액트 Hook 정리 2차" />
     <MESSAGE value="[modify] 0214 리액트 Hook 추가 공부" />
     <MESSAGE value="[add] 0216 스타일 컴포넌트 초안정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] 0216 스타일 컴포넌트 초안정리" />
+    <MESSAGE value="[add] 0221 스타일 컴포넌트 공부" />
+    <MESSAGE value="[add] 0222 emotion 0차 정리" />
+    <MESSAGE value="[add] 0223" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] 0223" />
   </component>
 </project>
