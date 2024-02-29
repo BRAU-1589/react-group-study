@@ -17,7 +17,31 @@ https://getbem.com/naming/
 1. 목적과 기능을 명확히 전달한다.
 2. 요소의 구조를 효율적으로 전달한다.
 3. css 명시도를 항상 낮은 수준으로 유지하기 떄문에 구체성으로 인한 코드의 길어짐을 방지할 수 있다.
+
+```css
+.header-title {}
+.footer-sns {}
+```
    
+
+## SCSS 
+### utils 함수 분리
+```scss
+//@import "./styles/utils";
+
+$red : #fa5252;
+
+@mixin square($size){
+  $calculated: 32px * $size;
+  width: $calculated;
+  height: $calculated;
+}
+```
+위 코드처럼
+1. 변수를 사용할 수 있다.
+2. 믹스인을 만들어서 재사용되는 스타일 블룩을 함수처럼 사용할 수 있다.
+3. @import 구문을 사용하여 다른 scss파일을 불러올 수 있다.
+
 
 ### CSS Module
 
@@ -80,7 +104,96 @@ const Button = styled.button`
 `render(<Button>This my button component.</Button>)
 ```
 
-## Tagged 템플릿 리터럴
-백틱
+
+## emotion
+
+### CSS
+```js
+import { css } from '@emotion/css'
+
+const color = 'white'
+
+render(
+  <div
+    className={css`
+      padding: 32px;
+      background-color: hotpink;
+      font-size: 24px;
+      border-radius: 4px;
+      &:hover {
+        color: ${color};
+      }
+    `}
+  >
+    Hover to change color.
+  </div>
+)
+```
+
+### React
+```js
+import { css } from '@emotion/react'
+
+const color = 'white'
+
+render(
+  <div
+    css={css`
+      padding: 32px;
+      background-color: hotpink;
+      font-size: 24px;
+      border-radius: 4px;
+      &:hover {
+        color: ${color};
+      }
+    `}
+  >
+    Hover to change color.
+  </div>
+)
+
+```
+
+### styled
+```js
+import styled from '@emotion/styled'
+
+const Button = styled.button`
+  padding: 32px;
+  background-color: hotpink;
+  font-size: 24px;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  &:hover {
+    color: white;
+  }
+`
+
+render(<Button>This my button component.</Button>)
+```
+
+
+### MediaQuery
+
+#### facepaint
+변수에 분기를 담아서, 반복문을 돌려 미디어쿼리로 꽂아줄 수 있다.
+```js
+import facepaint from 'facepaint'
+
+const breakpoints = [576, 768, 992, 1200]
+
+const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`))
+
+render(
+  <div
+    css={mq({
+      color: ['green', 'gray', 'hotpink']
+    })}
+  >
+    Some text.
+  </div>
+)
+```
 
 
