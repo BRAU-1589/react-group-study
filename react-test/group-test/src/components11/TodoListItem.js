@@ -1,3 +1,5 @@
+/*React.memo는 컴포넌트를 감싸며, props의 변화가 없으면 리렌더링을 방지해 성능을 최적화할 수 있게 함 */
+
 //TodoListItem.js
 import React from 'react';
 import {

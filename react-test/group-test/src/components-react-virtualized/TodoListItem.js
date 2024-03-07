@@ -6,7 +6,7 @@ props로 받은 style을 적용하였습니다.
 이는 홀수 짝수 항목에 대해 다른 배경 색상을 설정하기 위해서입니다.
 
 그다음에는 TodoListItem.scss 파일에서 최하단에 있던 & + &를 사용한 코드를 지우고, 
-코드 최상단에 .TodoListItem-virtualized 코드를 삽입합시다.
+코드 최상단에 .TodoListItem-virtualized 코드를 삽입.
 */
 
 //TodoListItem.js

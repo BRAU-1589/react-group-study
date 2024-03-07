@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0229 styled-component 정리">
+    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0307 react 성능 추가 정리">
       <change afterPath="$PROJECT_DIR$/ciy/11/11 - 1.Google 성능.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/group-test/src/react-11-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/group-test/src/react-11-1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +118,7 @@
       <workItem from="1709171963599" duration="60000" />
       <workItem from="1709172573206" duration="13243000" />
       <workItem from="1709691503595" duration="1469000" />
-      <workItem from="1709697251859" duration="3458000" />
+      <workItem from="1709697251859" duration="18786000" />
     </task>
     <task id="LOCAL-00001" summary="[modify] 컴포넌트 state">
       <created>1705293142456</created>
@@ -279,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709193988501</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="[add] 0307 react 성능 추가 정리">
+      <option name="closed" value="true" />
+      <created>1709779740745</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709779740745</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +324,7 @@
     <MESSAGE value="[add] 0223" />
     <MESSAGE value="[add] 0228 emotion 정리" />
     <MESSAGE value="[add] 0229 styled-component 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] 0229 styled-component 정리" />
+    <MESSAGE value="[add] 0307 react 성능 추가 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] 0307 react 성능 추가 정리" />
   </component>
 </project>

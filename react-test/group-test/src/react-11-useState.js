@@ -43,10 +43,6 @@ setTodos 함수에 콜백 함수를 전달하고, 이 콜백 함수는 현재의
 이 방식은 현재의 todos 상태가 최신 상태임을 보장하며, todos 상태에 직접 의존하지 않기 때문에 의존성 배열을 비워둘 수 있습니다.
 
 
-요약하자면,
-수정된 코드는 onInsert 함수가 todos 상태의 변경에 의존하지 않도록 하여 불필요한 재생성을 방지하고,
-함수형 업데이트를 통해 상태 업데이트 시 현재 상태의 최신을 보장하는 방식으로 최적화.
-
 
 
 
@@ -91,6 +87,12 @@ const BeSlow = () => {
   const [todos, setTodos] = useState(createBulkTodos);
   const nextId = useRef(2501);
 
+    /*
+  기존 코드:
+  의존성 배열에 todos를 포함시켰습니다.
+  이는 todos 배열이 변경될 때마다 onInsert 함수가 새로 생성되어야 함을 의미합니다.
+  즉, todos 배열의 상태가 업데이트 될 때마다 onInsert 콜백도 업데이트 되어야 합니다.
+  */
   //기존 onInsert
   // const onInsert = useCallback(
   //   (text) => {
@@ -105,6 +107,16 @@ const BeSlow = () => {
   //   [todos]
   // );
 
+
+
+
+  /*
+    수정된 코드:
+    의존성 배열이 비어 있습니다.
+    이는 onInsert 함수가 컴포넌트가 처음 렌더링될 때 단 한 번만 생성되고, 이후 재생성되지 않음을 의미합니다.
+    todos 상태의 변경에 따라 onInsert가 재생성되지 않도록 함으로써, 성능상의 이점을 얻을 수 있습니다.
+  */
+
   //수정한 onInsert
 
   const onInsert = useCallback((text) => {
@@ -116,6 +128,17 @@ const BeSlow = () => {
     setTodos((todos) => todos.concat(todo));
     nextId.current += 1;
   }, []);
+
+
+  /*
+  요약하자면,
+  수정된 코드는 onInsert 함수가 todos 상태의 변경에 의존하지 않도록 하여 불필요한 재생성을 방지하고,
+  함수형 업데이트를 통해 상태 업데이트 시 현재 상태의 최신을 보장하는 방식으로 최적화.
+*/
+
+
+
+
 
   //기존 onRemove
   // const onRemove = useCallback(
