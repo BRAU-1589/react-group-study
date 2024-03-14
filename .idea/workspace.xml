@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0307 react 성능 추가 정리">
-      <change afterPath="$PROJECT_DIR$/ciy/11/11 - 1.Google 성능.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/group-test/src/components11/TodoListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/group-test/src/react-11-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/group-test/src/react-11-1.js" afterDir="false" />
+    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0311 리액트 그룹 스터디 정리">
+      <change afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/component/Query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/ProfileTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/Profiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/component/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/component/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/component/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/component/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/df_m_27/WebstormProjects/react-group-study/ciy/09&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/df_m_27/WebstormProjects/react-group-study/ciy/09",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ciy/09" />
@@ -119,6 +128,10 @@
       <workItem from="1709172573206" duration="13243000" />
       <workItem from="1709691503595" duration="1469000" />
       <workItem from="1709697251859" duration="18786000" />
+      <workItem from="1709796396220" duration="9482000" />
+      <workItem from="1710208935979" duration="6575000" />
+      <workItem from="1710325263952" duration="34000" />
+      <workItem from="1710381026025" duration="3454000" />
     </task>
     <task id="LOCAL-00001" summary="[modify] 컴포넌트 state">
       <created>1705293142456</created>
@@ -289,7 +302,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709779740745</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="[add] 0307 react 성능 추가 정리">
+      <option name="closed" value="true" />
+      <created>1709797291002</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709797291002</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[add] 0307 react 성능 추가 정리">
+      <option name="closed" value="true" />
+      <created>1709798420456</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1709798420456</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[add] 0311 리액트 그룹 스터디 정리">
+      <option name="closed" value="true" />
+      <created>1710149026962</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710149026962</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +362,19 @@
     <MESSAGE value="[add] 0228 emotion 정리" />
     <MESSAGE value="[add] 0229 styled-component 정리" />
     <MESSAGE value="[add] 0307 react 성능 추가 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] 0307 react 성능 추가 정리" />
+    <MESSAGE value="[add] 0311 리액트 그룹 스터디 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] 0311 리액트 그룹 스터디 정리" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/react-test/router-tutorial/src/Profile.js</url>
+          <line>45</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

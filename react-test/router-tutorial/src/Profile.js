@@ -19,22 +19,32 @@ const data = {
   ciy: {
     name: "최인영",
     description: "리액트 라우터 테스트 중.",
+    bgColor: "#ff7f00",
+    color:"#f5f5dc"
   },
   kmr: {
     name: "김미리",
     description: "파주댁",
+    bgColor: "#f5f5dc",
+    color:"#000"
   },
   ohr: {
     name: "오혜림",
-    description: "삼각지 헤이터",
+    description: "삼각지 다녀옴",
+    bgColor: "#ff0000",
+    color:"pink"
   },
   shj: {
     name: "석현정",
     description: "지구모양 대표",
+    bgColor: "#B3E0ff",
+    color:"rgba(161,113,255,0.56)"
   },
   sm2s: {
     name: "서문명수",
     description: "유학파",
+    bgColor: "#800020",
+    color:"#fff"
   },
 };
 
@@ -54,13 +64,20 @@ V6에서는 useParams를 사용해야 합니다.
   if (!profile) {
     return <div>존재하지 않는 사용자입니다.</div>;
   }
+
+  const profileStyle = {
+    backgroundColor: profile.bgColor,
+    color: profile.color,
+    padding: '20px',
+    borderRadius: '5px'
+  };
   return (
-    <div>
-      <h3>
-        {username}({profile.name})
-      </h3>
-      <p>{profile.description}</p>
-    </div>
+      <div style={profileStyle}>
+        <h3>
+          {username}({profile.name})
+        </h3>
+        <p>{profile.description}</p>
+      </div>
   );
 };
 

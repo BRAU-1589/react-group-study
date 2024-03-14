@@ -25,6 +25,7 @@ import { Route, Routes, Link } from "react-router-dom";
 import About from "./component/About";
 import Home from "./component/Home";
 import Profiles from "./Profiles";
+import QueryComponent from "./component/Query";
 
 const App = () => {
   return (
@@ -51,6 +52,12 @@ const App = () => {
         <li>
           <Link to="/profile">전체 프로필</Link>
         </li>
+        <li>
+           <Link to="/eyeg?name=InyoungChoi">쿼리스트링 - 최인영</Link>
+        </li>
+          <li>
+            <Link to="/eyeg?name=eyeg">쿼리스트링 - eyeg</Link>
+          </li>
       </ul>
       <hr />
       <Routes>
@@ -90,6 +97,8 @@ const App = () => {
         V5에서는 username 값을 조회하기 위해 /:username 만 사용해도 되었지만, 
         V6에서는 username 값을 조회하기 위해서는 /:username 뒤에 /*를 붙여 주어야 합니다. (ex: ../:username/*) 
         */}
+
+          <Route path="/eyeg?" element={<QueryComponent />} />
       </Routes>
     </div>
   );

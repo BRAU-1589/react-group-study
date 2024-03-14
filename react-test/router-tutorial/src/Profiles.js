@@ -9,9 +9,15 @@ const Profiles = () => {
       <h3>사용자 목록:</h3>
       <ul>
         <li>
+          {/*
+          Navlink 컴포넌트는 링크에서 사용하는· 경로가 현재 라우트의 경로와 일치하는 경우
+          특정 스타일 또는 CSS 클래스를 적용하는 컴포넌트.
+          이 컴포넌트의 style과 className은 {isActive: boolean}을
+          파라미터로 전달받는 함수 타입의 값을 전달.
+          */}
           <NavLink
             to="./ciy"
-            style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}
+            style={({ isActive }) => ({ color: isActive ? "green" : "blue", fontSize: isActive ? "1.2em" : "1em", })}
           >
             최인영
           </NavLink>
@@ -19,7 +25,7 @@ const Profiles = () => {
         <li>
           <NavLink
             to="./kmr"
-            style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}
+            style={({ isActive }) => ({ color: isActive ? "green" : "blue", fontSize: isActive ? "1.2em" : "1em", })}
           >
             김미리
           </NavLink>
@@ -27,7 +33,7 @@ const Profiles = () => {
         <li>
           <NavLink
             to="./ohr"
-            style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}
+            style={({ isActive }) => ({ color: isActive ? "green" : "blue", fontSize: isActive ? "1.2em" : "1em", })}
           >
             오혜림
           </NavLink>
@@ -35,7 +41,7 @@ const Profiles = () => {
         <li>
           <NavLink
             to="./shj"
-            style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}
+            style={({ isActive }) => ({ color: isActive ? "green" : "blue", fontSize: isActive ? "1.2em" : "1em", })}
           >
             석현정
           </NavLink>
@@ -43,7 +49,7 @@ const Profiles = () => {
         <li>
           <NavLink
             to="./sm2s"
-            style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}
+            style={({ isActive }) => ({ color: isActive ? "green" : "blue", fontSize: isActive ? "1.2em" : "1em", })}
           >
             서문명수
           </NavLink>
