@@ -26,15 +26,16 @@ import About from "./component/About";
 import Home from "./component/Home";
 import Profiles from "./Profiles";
 import QueryComponent from "./component/Query";
+import MyPage from "./component/MyPage";
 
 const App = () => {
   return (
     <div>
-      <ul>
-        <li>
-          <Link to="/">홈</Link>
+        <ul>
+            <li>
+                <Link to="/">홈</Link>
 
-          {/*
+                {/*
             13.2.5 Link 컴포넌트를 사용하여 다른 주소로 이동하기
 
             Link 컴포넌트는 클릭하면 다른 주소로 이동시켜 주는 컴포넌트.
@@ -45,24 +46,27 @@ const App = () => {
 
             <Link to="주소">내용</Link>
           */}
-        </li>
-        <li>
-          <Link to="/about">그룹스터디 소개</Link>
-        </li>
-        <li>
-          <Link to="/profile">전체 프로필</Link>
-        </li>
-        <li>
-           <Link to="/eyeg?name=InyoungChoi">쿼리스트링 - 최인영</Link>
-        </li>
-          <li>
-            <Link to="/eyeg?name=eyeg">쿼리스트링 - eyeg</Link>
-          </li>
-      </ul>
-      <hr />
-      <Routes>
-        <Route path="/" element={<Home />} exact={true} />
-        <Route path="/about" element={<About />} />
+            </li>
+            <li>
+                <Link to="/about">그룹스터디 소개</Link>
+            </li>
+            <li>
+                <Link to="/profile">전체 프로필</Link>
+            </li>
+            <li>
+                <Link to="/eyeg?name=InyoungChoi">쿼리스트링 - 최인영</Link>
+            </li>
+            <li>
+                <Link to="/eyeg?name=eyeg">쿼리스트링 - eyeg</Link>
+            </li>
+            <li>
+                <Link to="/mypage">로그인</Link>
+            </li>
+        </ul>
+        <hr/>
+        <Routes>
+            <Route path="/" element={<Home/>} exact={true}/>
+            <Route path="/about" element={<About />} />
         <Route path="/profile/*" element={<Profiles />} />
         {/*// v6 버전에서 변동됨*/}
         {/*// v5: <Route path="/profile/:username" component={Profile} />*/}
@@ -99,6 +103,7 @@ const App = () => {
         */}
 
           <Route path="/eyeg?" element={<QueryComponent />} />
+          <Route path="/mypage" element={<MyPage />} />
       </Routes>
     </div>
   );

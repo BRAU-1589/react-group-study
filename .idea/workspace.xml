@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0311 리액트 그룹 스터디 정리">
-      <change afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/component/Query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/ProfileTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/Profiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/component/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/component/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/component/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/component/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-test/router-tutorial/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/react-test/router-tutorial/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="dca4e029-b60b-41f9-81f2-b062eceaf11f" name="Changes" comment="[add] 0314 리액트 라우터 정리" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +118,7 @@
       <workItem from="1709796396220" duration="9482000" />
       <workItem from="1710208935979" duration="6575000" />
       <workItem from="1710325263952" duration="34000" />
-      <workItem from="1710381026025" duration="3454000" />
+      <workItem from="1710381026025" duration="3667000" />
     </task>
     <task id="LOCAL-00001" summary="[modify] 컴포넌트 state">
       <created>1705293142456</created>
@@ -326,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710149026962</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="[add] 0314 리액트 라우터 정리">
+      <option name="closed" value="true" />
+      <created>1710384727516</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710384727516</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +358,8 @@
     <MESSAGE value="[add] 0229 styled-component 정리" />
     <MESSAGE value="[add] 0307 react 성능 추가 정리" />
     <MESSAGE value="[add] 0311 리액트 그룹 스터디 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] 0311 리액트 그룹 스터디 정리" />
+    <MESSAGE value="[add] 0314 리액트 라우터 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] 0314 리액트 라우터 정리" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
