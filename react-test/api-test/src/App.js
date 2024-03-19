@@ -51,17 +51,30 @@ export default App;
 */
 
 import React, { useState, useCallback } from 'react';
-import NewsList from './components/NewsList';
-import Categories from './components/Categories';
+//import NewsListAxios from './components/NewsListAxios';
+//import NewsListFetch from './components/NewsListFetch';
+//import Categories from './components/Categories';
+
+//라우트 테스트 시작
+import {Route, Routes} from 'react-router-dom';
+import NewsPage from './components/NewsPage';
 
 const App = () => {
-  const [category, setCategory] = useState('all');
-  const onSelect = useCallback((category) => setCategory(category), []);
+
 
   return (
     <>
-      <Categories category={category} onSelect={onSelect} />
-      <NewsList category={category} />
+
+      {/*<Categories category={category} onSelect={onSelect} />*/}
+      {/*<NewsListAxios category={category} />*/}
+      {/*<NewsListFetch category={category} />*/}
+
+
+        <Routes>
+            <Route path="/:category?" element={<NewsPage />} />
+        </Routes>
+
+
     </>
   );
 };

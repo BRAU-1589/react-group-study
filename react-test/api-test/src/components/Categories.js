@@ -148,20 +148,37 @@ const Category = styled.div`
   }
 `;
 
+// const Categories = ({ onSelect, category }) => {
+//   return (
+//     <CategoriesBlock>
+//       {categories.map((c) => (
+//         <Category
+//           key={c.name}
+//           active={category === c.name}
+//           onClick={() => onSelect(c.name)}
+//         >
+//           {c.text}
+//         </Category>
+//       ))}
+//     </CategoriesBlock>
+//   );
+// };
+
 const Categories = ({ onSelect, category }) => {
   return (
-    <CategoriesBlock>
-      {categories.map((c) => (
-        <Category
-          key={c.name}
-          active={category === c.name}
-          onClick={() => onSelect(c.name)}
-        >
-          {c.text}
-        </Category>
-      ))}
-    </CategoriesBlock>
+      <CategoriesBlock>
+        {categories.map((c) => (
+            <Category
+                key={c.name}
+                className={category === c.name ? 'active' : ''}
+                onClick={() => onSelect(c.name)}
+            >
+              {c.text}
+            </Category>
+        ))}
+      </CategoriesBlock>
   );
 };
+
 
 export default Categories;
