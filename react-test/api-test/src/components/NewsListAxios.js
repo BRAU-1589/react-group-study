@@ -2,6 +2,7 @@ import React, { useState, useEffect, memo } from 'react';
 import styled from 'styled-components';
 import NewsItem from './NewsItem';
 import axios from 'axios';
+//REACT_APP_NEWS_API_KEY=0a8c4202385d4ec1bb93b7e277b3c51f
 
 const NewsListBlock = styled.div`
   box-sizing: border-box;
