@@ -1,0 +1,36 @@
+/* SpaceshipControl.css */
+.spaceship-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.spaceship-container.ready {
+  background-color: lightblue;
+}
+
+.spaceship-container.flying {
+  background-color: lightgreen;
+  animation: flightAnimation 5s infinite linear;
+}
+
+.spaceship-container.docking {
+  background-color: lightcoral;
+}
+
+.status-animation {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-image: url('./logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@keyframes flightAnimation {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(0); }
+}
