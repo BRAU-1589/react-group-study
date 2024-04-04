@@ -115,6 +115,84 @@ unsubscribe()
 * 똑같은 파라미터로 호출된 리듀서 함수는 언제나 똑같은 결과 값을 반환해야 한다.
 
 
+# 17장. 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기
+## 리덕스를 작성할 때
+### 액션 타입, 액션 생성 함수, 리듀서 코드를 작성
+* 일반적인 구조로는 actions, constants, reducers라는 세 개의 데릭터리를 만들고, 그 안에 기능별로 파일을 하나씩 만드는 방식이다.<br>
+actions / counter.js <br>
+actions / todo.js<br>
+constants / ActionTypes.js<br>
+reducers / counter.js<br>
+reducers / todos.js<br>
+* Ducks 패턴 : 액션 타입, 액션 생성 함수, 리듀서 함수를 기능별로 파일 하나에 몰아서 다 작성하는 방식이다.<br>
+modules / couter.js<br>
+modules / todos.js
+
+## 리액트에 리덕스 사용하기
+### 1. 스토어 만들기
+```js
+import { createStore } form 'redux';
+import rootReducer form './modules';
+
+const store = createStore(rootReducer);
+```
+### 2. Provider 컴포넌트를 사용하여 프로젝트에 리덕스 적용
+이 컴포넌트를 사용할 대는 store를 props로 달아줘야한다.
+```js
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
+        <Provider store={store}>
+          <App/>
+        </Provider>
+)
+```
+
+## 리덕스 편하게 사용하기
+### redux-actions
+* 액션 생성 함수를 더 짧은 코드로 작성할 수 있게 해준다.
+* 리듀서를 작성할 때 switch문이 아닌 handleActions라는 함수를 사용할 수 있게 해준다.
+
+#### 1. createAction
+액션 생성 함수를 만들어주는 함수로, 직접 객체를 만들 필요가 없어 훨씬 간단하다.
+* createAction을 사용하지 않았을 때
+  Redux의 action 생성자를 하나씩 만들어야 함.
+```js
+const CHANGE_USER = 'user/CHANGE_USER';
+export const change_user = user => ({type: CHANGE_USER, user})
+```
+* createAction을 사용했을 때 <br>
+파라미터로 전달 받은 값을 객체에 넣어주는 단순한 패턴 즉, 단순 작업을 해결할 수 있음.
+```js
+import {createAction} from 'redux-actions';
+const CHANGE_USER = 'user/CHANGE_USER'
+
+export const change_user = createAction(CHANGE_USER, user => user);
+```
+
+#### 2. handleActions
+리듀서를 간단하게 작성할 수 있다.
+* handleActions을 사용하지 않았을 때
+```js
+const reducer = (state = initState, action) => {
+    switch (action.type) {
+        case CHANGE_USER:
+            return {
+                ...state,
+                user: action.user
+            }
+    }
+}
+```
+* handleActions을 사용했을 때 <br>
+  createAction()을 사용해서 기존 방식과 다른 payload를 써줘야한다. payload에 담은 값이 존재하게 된다.
+```js
+import { handleActions } from 'redux-actions';
+const reducer = handleActions({
+    [CHANGE_USER]: (state, action) => ({...state, user: action.user})
+});
+```
+### immer
+객체의 구조가 복잡해지거나 객체로 이루어진 배열을 다룰 경우, immer를 사용하면 훨씬 편리하게 상태를 관리할 수 있다.
 
 
 
