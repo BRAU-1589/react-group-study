@@ -149,5 +149,5 @@ https://legacy.reactjs.org/docs/code-splitting.html#reactlazy
 
 
 
-서버 사이드 렌더링을 할 계획이 없다면 React.lazy와 Suspense로 구현하고, 계획이 있다면 Loadable Components를 사용해야 합니다. 리액트 공식 문서에서도 서버 사이드 렌더링을 할 경우 Loadable Components 라이브러리를 사용하도록 권장하고 있습니다.
+서버 사이드 렌더링을 할 계획이 없다면 React.lazy와 Suspense로 구현하고, 계획이 있다면 Loadable Components를 사용해야 합니다. 리액트 공식 문서에서도 서버 사이드 렌더링을 할 경우 Loadable Components 라이브러리를 사용하도록 권장하고 있다.
 
